@@ -1,10 +1,12 @@
 # Upper Limb Forward-reaching Data from Non-disabled Human Subjects
 
 ## Introduction
-This dataset captures the upper limb and trunk movement kinematics， as well as surface electromyography (sEMG) data from the upper-arm muscles, of 10 non-disabled human subjects. The data was collected during forward-reaching actions towards 9 spatial locations in the parasagittal plane.
+This dataset captures the upper limb and trunk movement kinematics, as well as surface electromyography (sEMG) data from 7 upper-arm muscles, of 10 non-disabled human subjects. The data was collected during forward-reaching actions towards 9 spatial locations in the parasagittal plane.
 
-* The experiment was conducted in a head-mounted display (HMD) virtual reality (VR) environment. The setup and VR avatar is presented in Figure 1(a) and Figure 1(b), respectively.
+* The experiment was conducted in a virtual reality (VR) environment using a head-mounted display (HMD). The setup and VR avatar is presented in Figure 1(a) and Figure 1(b), respectively.
 * The spatial locations of the targets are designed to elicit specific upper limb joint displacements as illustrated in Figure 1(c). 
+* The kinematics recorded include shoulder, scapular, and trunk movements.
+* The muscles monitored include: biceps brachii short/long head, triceps brachii lateral/long head, and anterior/middle/posterior deltoid.
 
 
 | <img src="./Figures/setup.png"  width="200" > | <img src="./Figures/avatar.png"  width="200" >| <img src="./Figures/targets.png"  width="170" >|
@@ -107,6 +109,6 @@ The experiment was approved by the University of Melbourne Human Research Ethics
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/) CC BY 4.0 
 
 ## Contact
-Tianshi Yu tianshiy@student.unimelb.edu.au, Human Robotics Laboratory, The University of Melbourne
+Tianshi Yu tianshiy@student.unimelb.edu.au, [Human Robotics Laboratory](https://blogs.unimelb.edu.au/human-robotics/), The University of Melbourne
 
 
