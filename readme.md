@@ -94,6 +94,7 @@ This dataset captures the upper limb and trunk movement kinematics， as well as
 The experiment was approved by the University of Melbourne Human Research Ethics Committee, project ID 11878.
 
 
+
 ## Related Publication
 * [T. Yu, A. Mohammadi, Y. Tan, P. Choong and D. Oetomo, "Sensor Selection With Composite Features in Identifying User-Intended Poses for Human-Prosthetic Interfaces," in IEEE Transactions on Neural Systems and Rehabilitation Engineering, vol. 31, pp. 1732-1742, 2023, doi: 10.1109/TNSRE.2023.3258225.](https://ieeexplore.ieee.org/document/10073539)  ----- [Code availability]()
 
@@ -101,6 +102,9 @@ The experiment was approved by the University of Melbourne Human Research Ethics
 
 * [T. Yu, R. Garcia-Rosas, A. Mohammadi, Y. Tan, P. Choong and D. Oetomo, "Separability of Input Features and the Resulting Accuracy in Classifying Target Poses for Active Transhumeral Prosthetic Interfaces," 2021 43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC), Mexico, 2021, pp. 4615-4618, doi: 10.1109/EMBC46164.2021.9630041.](https://ieeexplore.ieee.org/abstract/document/9630041)
 
+## License
+
+[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/) CC BY 4.0 
 
 ## Contact
 Tianshi Yu tianshiy@student.unimelb.edu.au, Human Robotics Laboratory, The University of Melbourne
