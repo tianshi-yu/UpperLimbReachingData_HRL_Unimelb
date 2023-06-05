@@ -1,7 +1,7 @@
-# Upper Limb Forward-reaching Data from Non-disabled Human Subjects
+# Upper Limb Forward-reaching Data from Non-disabled Human Subjects for Powered Transhumeral Prostheses Development
 
 ## Introduction
-This dataset captures the upper limb and trunk movement kinematics, as well as surface electromyography (sEMG) data from 7 upper-arm muscles, of 10 non-disabled human subjects. The data was collected during forward-reaching actions toward 9 spatial locations in the parasagittal plane. The dataset can be used to analyze human movement patterns and develop algorithms for the control of movement in assistive robotic devices, such as powered prostheses. 
+This dataset captures the upper-arm and trunk movement kinematics, as well as surface electromyography (sEMG) data from 7 upper-arm muscles, of 10 non-disabled human subjects. The data was collected during forward-reaching actions toward 9 spatial locations in the parasagittal plane. The dataset can be used to analyze human movement patterns and develop algorithms for the control of movement in assistive robotic devices, such as powered transhumeral prostheses. 
 
 * The experiment was conducted in a virtual reality (VR) environment using a head-mounted display (HMD). The setup and VR avatar are presented in Figure 1(a) and Figure 1(b), respectively.
 * The spatial locations of the targets are designed to elicit specific upper limb joint displacements as illustrated in Figure 1(c). 
@@ -44,7 +44,6 @@ This dataset captures the upper limb and trunk movement kinematics, as well as s
     | Scpr & dScpr  | Scapular protraction/retraction dispalcement (m) and velocity (m/s)|
     | Tfe & dTfe    | Trunk flexion/extension pose (deg) and velocity (deg/s)|
     | Tb & dTb      | Trunk left/right bending pose (deg) and velocity (deg/s) |
-    | Efe           | Elbow flexion/extension pose (deg) |
     </details>
 
 * sEMG features
