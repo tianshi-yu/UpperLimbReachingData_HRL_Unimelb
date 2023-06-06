@@ -1,7 +1,7 @@
-# Upper Limb Forward-reaching Data from Non-disabled Human Subjects for Powered Transhumeral Prostheses Development
+# Upper Limb Forward-reaching Data from Non-disabled Human Subjects for Active Transhumeral Prostheses Development
 
 ## Introduction
-This dataset captures the upper-arm and trunk movement kinematics, as well as surface electromyography (sEMG) data from 7 upper-arm muscles, of 10 non-disabled human subjects. The data was collected during forward-reaching actions toward 9 spatial locations in the parasagittal plane. The dataset can be used to analyze human movement patterns and develop algorithms for the control of movement in assistive robotic devices, such as powered transhumeral prostheses. 
+This dataset captures the upper-arm and trunk movement kinematics, as well as surface electromyography (sEMG) data from 7 upper-arm muscles, of 10 non-disabled human subjects. The data was collected during forward-reaching actions toward 9 spatial locations in the parasagittal plane, 10 iterations for each location. The dataset can be used to analyze human movement patterns and develop algorithms for the control of movement in assistive robotic devices, such as active transhumeral prostheses. 
 
 * The experiment was conducted in a virtual reality (VR) environment using a head-mounted display (HMD). The setup and VR avatar are presented in Figure 1(a) and Figure 1(b), respectively.
 * The spatial locations of the targets are designed to elicit specific upper limb joint displacements as illustrated in Figure 1(c). 
@@ -15,62 +15,68 @@ This dataset captures the upper-arm and trunk movement kinematics, as well as su
 
 
 ## Usage
-1. The [DataSet.csv](DataSet.csv) file contains all the features processed from kinematic and sEMG sensor measurements.
+* The [DataSet.csv](DataSet.csv) file contains all the features processed from kinematic and sEMG sensor measurements.
 
-2. The definitions of headers:
-* Non-features
-    <details>
-    <summary>Click to expand</summary>
+* The definitions of headers:
+    * Non-features
+        <details>
+        <summary>Click to expand</summary>
 
-    | Header        | Description   | 
-    | ------------- |-------------|
-    | Subject       | Subject number from 1 to 10|
-    | Loc           | Label of 3 elbow poses from 0 to 2|
-    | LocO          | Label of 9 spatial locations from 0 to 8|
-    | Iteration     | Iteration number of the movement from 1 to 90|
-    </details>
+        | Header        | Description   | 
+        | ------------- |-------------|
+        | Subject       | Subject number from 1 to 10|
+        | Loc           | Label of 3 elbow poses from 0 (T1) to 2 (T3) |
+        | LocO          | Label of 9 spatial locations from 0 to 8|
+        | Iteration     | Iteration number of the movement from 1 to 90|
+        </details>
 
-    
-* Kinematic feautres
+        
+    * Kinematic feautres
 
-    <details>
-    <summary>Click to expand</summary>
+        <details>
+        <summary>Click to expand</summary>
 
-    | Header        | Description   | 
-    | ------------- |-------------|
-    | Sfe & dSfe    | Shoulder flexion/extension pose (deg) and velocity (deg/s)|
-    | Saa & dSaa    | Shoulder adduction/abduction pose (deg) and velocity (deg/s)|
-    | Scde & dScde  | Scapular depression/elevation dispalcement (m) and velocity (m/s)|
-    | Scpr & dScpr  | Scapular protraction/retraction dispalcement (m) and velocity (m/s)|
-    | Tfe & dTfe    | Trunk flexion/extension pose (deg) and velocity (deg/s)|
-    | Tb & dTb      | Trunk left/right bending pose (deg) and velocity (deg/s) |
-    </details>
+        | Header        | Description   | 
+        | ------------- |-------------|
+        | Sfe & dSfe    | Shoulder flexion/extension pose (deg) and velocity (deg/s)|
+        | Saa & dSaa    | Shoulder adduction/abduction pose (deg) and velocity (deg/s)|
+        | Scde & dScde  | Scapular depression/elevation dispalcement (m) and velocity (m/s)|
+        | Scpr & dScpr  | Scapular protraction/retraction dispalcement (m) and velocity (m/s)|
+        | Tfe & dTfe    | Trunk flexion/extension pose (deg) and velocity (deg/s)|
+        | Tb & dTb      | Trunk left/right bending pose (deg) and velocity (deg/s) |
+        </details>
 
-* sEMG features
+    * sEMG features
 
-    <details>
-    <summary>Click to expand</summary>
+        <details>
+        <summary>Click to expand</summary>
 
-    sEMG header names follow the format: [muscle]_[feature]
+        sEMG header names follow the format: [muscle]_[feature]
 
-    | Muscle Header        | Description   | 
-    | ------------- |-------------|
-    | BSH           | Biceps brachii short head |
-    | BLH           | Biceps brachii long head |
-    | TLAH          | Triceps brachii lateral head|
-    | TLH           | Triceps brachii long head |
-    | DA            | Anterior deltoid |
-    | DM            | Middle deltoid |
-    | DP            | Posterior deltoid |
+        | Muscle Header        | Description   | 
+        | ------------- |-------------|
+        | BSH           | Biceps brachii short head |
+        | BLH           | Biceps brachii long head |
+        | TLAH          | Triceps brachii lateral head|
+        | TLH           | Triceps brachii long head |
+        | DA            | Anterior deltoid |
+        | DM            | Middle deltoid |
+        | DP            | Posterior deltoid |
 
-    | Feature Header        | Description   |
-    | ------------- |-------------|
-    | MAV           | Mean absolute value |
-    | RMS           | Root mean square |
-    | WL            | Wavelength    |
-    | ZC            | Zero crossing |
-    | SC            | Slope sign change |
-    </details>
+        | Feature Header        | Description   |
+        | ------------- |-------------|
+        | MAV           | Mean absolute value |
+        | RMS           | Root mean square |
+        | WL            | Wavelength    |
+        | ZC            | Zero crossing |
+        | SC            | Slope sign change |
+        </details>
+
+* If you would like to use this dataset for your research or project please cite our TNSRE paper:
+
+    [T. Yu, A. Mohammadi, Y. Tan, P. Choong and D. Oetomo, "Sensor Selection With Composite Features in Identifying User-Intended Poses for Human-Prosthetic Interfaces," in IEEE Transactions on Neural Systems and Rehabilitation Engineering, vol. 31, pp. 1732-1742, 2023, doi: 10.1109/TNSRE.2023.3258225.](https://ieeexplore.ieee.org/document/10073539) 
+
+    We appreciate your acknowledgement.
 
 ## Data Collection Method
 ### Equipments
@@ -81,22 +87,16 @@ This dataset captures the upper-arm and trunk movement kinematics, as well as su
 
 ### Methods
 * For the details about the experimental protocol please refer to the Section III of our [TNSRE paper](https://ieeexplore.ieee.org/document/10073539).
-* A summary 
-    <details>
-    <summary>Click to expand</summary>
-
+* A summary of feature extraction:
     - The sEMG features are extracted using a moving window of 200 ms with a 100 ms overlap.
     - The joint poses are determined based on the orientation readings of the trackers and downsampled to 10 Hz using the same moving window.
-    - The joint velocities are obtained by differentiating the poses and also downsampled to 10 Hz.
-    </details>
+    - The joint velocities are obtained by differentiating the poses and also downsampled to 10 
 
 ## Human Research Ethics
 The experiment was approved by the University of Melbourne Human Research Ethics Committee, project ID 11878.
 
-
-
 ## Related Publication
-* [T. Yu, A. Mohammadi, Y. Tan, P. Choong and D. Oetomo, "Sensor Selection With Composite Features in Identifying User-Intended Poses for Human-Prosthetic Interfaces," in IEEE Transactions on Neural Systems and Rehabilitation Engineering, vol. 31, pp. 1732-1742, 2023, doi: 10.1109/TNSRE.2023.3258225.](https://ieeexplore.ieee.org/document/10073539)  ----- [Code availability]()
+* [T. Yu, A. Mohammadi, Y. Tan, P. Choong and D. Oetomo, "Sensor Selection With Composite Features in Identifying User-Intended Poses for Human-Prosthetic Interfaces," in IEEE Transactions on Neural Systems and Rehabilitation Engineering, vol. 31, pp. 1732-1742, 2023, doi: 10.1109/TNSRE.2023.3258225.](https://ieeexplore.ieee.org/document/10073539)  --- [Code availability coming soon...]()
 
 * [T. Yu, R. Garcia-Rosas, A. Mohammadi, Y. Tan, P. Choong and D. Oetomo, "Comparing the Outcomes of Population-averaged and Personalised Input Feature Selection for Transhumeral Prosthetic Interfaces," 2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC), Melbourne, Australia, 2021, pp. 417-422, doi: 10.1109/SMC52423.2021.9659209.](https://ieeexplore.ieee.org/abstract/document/9659209)
 
