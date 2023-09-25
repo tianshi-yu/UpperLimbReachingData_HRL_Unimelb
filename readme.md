@@ -72,11 +72,21 @@ This dataset captures the upper-arm and trunk movement kinematics, as well as su
         | SC            | Slope sign change |
         </details>
 
-* If you would like to use this dataset for your research or project please cite our TNSRE paper:
+* We would appreciate your acknowledgement by citing our paper:
 
     [T. Yu, A. Mohammadi, Y. Tan, P. Choong and D. Oetomo, "Sensor Selection With Composite Features in Identifying User-Intended Poses for Human-Prosthetic Interfaces," in IEEE Transactions on Neural Systems and Rehabilitation Engineering, vol. 31, pp. 1732-1742, 2023, doi: 10.1109/TNSRE.2023.3258225.](https://ieeexplore.ieee.org/document/10073539) 
 
-    We appreciate your acknowledgement.
+    ```    
+    @article{Yu2023,
+    author={Yu, Tianshi and Mohammadi, Alireza and Tan, Ying and Choong, Peter and Oetomo, Denny},
+    journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering}, 
+    title={Sensor Selection With Composite Features in Identifying User-Intended Poses for Human-Prosthetic Interfaces}, 
+    year={2023},
+    volume={31},
+    number={},
+    pages={1732-1742},
+    doi={10.1109/TNSRE.2023.3258225}}
+    ```
 
 ## Data Collection Method
 ### Equipments
